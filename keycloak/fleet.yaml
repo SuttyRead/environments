@@ -1,16 +1,16 @@
-defaultNamespace: keycloak
-helm:
-  releaseName: keycloak
-  chart: "keycloak"
-  repo: "https://charts.bitnami.com/bitnami"
-  version: "18.0.0"
-  force: true
-  values:
-    ingress:
-      enabled: true
-      ingressClassName: "nginx"
-      hostname: keycloak.sutty.shop
-      annotations:
-        cert-manager.io/cluster-issuer: "letsencrypt-staging"
-      tls: true
-    proxy: edge
+#defaultNamespace: keycloak
+#helm:
+#  releaseName: keycloak
+#  chart: "keycloak"
+#  repo: "https://charts.bitnami.com/bitnami"
+#  version: "18.0.0"
+#  force: true
+#  values:
+#    ingress:
+#      enabled: true
+#      ingressClassName: "nginx"
+#      hostname: keycloak.sutty.shop
+#      annotations:
+#        cert-manager.io/cluster-issuer: "letsencrypt-staging"
+#      tls: true
+#    proxy: edge
